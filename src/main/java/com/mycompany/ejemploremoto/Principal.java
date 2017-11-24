@@ -18,7 +18,7 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        out.println("Inicio");
+        out.println("Inicio prueba");
 
     }
     private static final Logger LOG = Logger.getLogger(Principal.class.getName());
