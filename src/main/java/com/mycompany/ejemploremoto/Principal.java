@@ -5,6 +5,9 @@
  */
 package com.mycompany.ejemploremoto;
 
+import static java.lang.System.out;
+import java.util.logging.Logger;
+
 /**
  *
  * @author formacion
@@ -15,8 +18,9 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Inicio");
+        out.println("Inicio");
+
     }
+    private static final Logger LOG = Logger.getLogger(Principal.class.getName());
     
 }

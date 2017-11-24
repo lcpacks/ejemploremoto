@@ -6,16 +6,21 @@
 package com.mycompany.ejemploremoto;
 
 import java.util.ArrayList;
+import static java.util.Collections.unmodifiableList;
 import java.util.List;
+import java.util.logging.Logger;
+import static java.util.logging.Logger.getLogger;
 
 /**
  *
  * @author formacion
  */
 class Usuario {
+
+    private static final Logger LOG = getLogger(Usuario.class.getName());
     List<Pelicula> peliculas = new ArrayList<>();
     
     List<Pelicula> listaPeliculas() {
-        return peliculas;
+        return unmodifiableList(peliculas);
     }    
 }
