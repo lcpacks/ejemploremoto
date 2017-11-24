@@ -21,6 +21,6 @@ class Usuario {
     List<Pelicula> peliculas = new ArrayList<>();
     
     List<Pelicula> listaPeliculas() {
-        return unmodifiableList(peliculas);
+        return peliculas;
     }    
 }
